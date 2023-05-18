@@ -27,7 +27,7 @@ export default function ColorRenderer() {
         page!
       </h2>
       {colors.map((curr) => {
-        return <Color hex={curr.hex} name={curr.name} />
+        return <Color key={curr.hex} hex={curr.hex} name={curr.name} />
       })}
     </div>
   );
